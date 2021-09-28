@@ -7,7 +7,8 @@ En este repositorio encontrarás prácticas **básicas** de **reactJs** con **Ty
 1. Listados dinámicos.
 2. Llamados a API`S
 3. Formularios.
-4. Reacr Hooks.
+4. React Hooks.
+5. Axios.
 
 ## Scripts Disponibles
 
