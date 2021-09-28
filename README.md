@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+![Header Tech](https://i.ibb.co/WD232PR/image.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Descripción
 
-## Available Scripts
+En este repositorio encontrarás prácticas **básicas** de **reactJs** con **Typescript**, los componentes han sido tratados como funciones, por lo tanto encontrarás el uso **básico** de algunos hooks de react y adicionalmente hay un **CustomHook** el cual puede servir de guia para entender mejor el funcionamiento de los mismos. También podemos encontrar:
 
-In the project directory, you can run:
+1. Listados dinámicos.
+2. Llamados a API`S
+3. Formularios.
+4. Reacr Hooks.
 
-### `yarn start`
+## Scripts Disponibles
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+El en directorio principal del proyecto puedes ejecutar los siguientes comandos para ver la app en el navegador.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `yarn start or npm start`
 
-### `yarn test`
+218 / 5000
+Resultados de traducción
+Ejecuta la aplicación en modo de desarrollo. \
+Abra [http: // localhost: 3000] (http: // localhost: 3000) para verlo en el navegador.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+La página se recargará si realiza modificaciones. \ También verá errores en la consola. 
 
-### `yarn build`
+## Algunas capturas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `CustomHook`
+![CustomHook](https://i.ibb.co/BV7JK7p/image.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Este se invoca desde el componente que se rederiza, el mismo es un formulario básico, el cual se construyó para ejemplificar lo expuesto.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `Formulario de ejemplo para invocar el hook construido`
+![Formulario de Ejemplo](https://i.ibb.co/Dk5rVJG/image.png)
 
-### `yarn eject`
+De esta forma nos aseguramos que los campos que deseamos utilizar sea **tipos** seleccionables en nuestro componente
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Tipos selecionables](https://i.ibb.co/PNqb6Pk/image.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `Listado Dinámico`
+![Listado dinámico](https://i.ibb.co/GV7VQQv/image.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Este listado hace uso de una interfaz llamada **Usuario** la cual es importada de un archivo llamado **reqRes** , acá dejo la estructura del mismo:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `Interfaz referencial del response del API`
+![interfaz reqRes](https://i.ibb.co/z4DGhgn/image.png)
 
-## Learn More
+Este archivo contiene tres interfaces, y es importante revisarlo porque nos enseña como construir interfaces que tienen dentro de sus atributos objetos literales.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `Llamado al API reqres`
+    import axios from "axios";
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    export const reqResApi = axios.create({
+      baseURL: "https://reqres.in/api",
+    });
