@@ -37,8 +37,12 @@ De esta forma nos aseguramos que los campos que deseamos utilizar sea **tipos** 
 
 ![Tipos selecionables](https://i.ibb.co/PNqb6Pk/image.png)
 
-### `Listado Dinámico`
+### `Listado Dinámico (implementación)`
 ![Listado dinámico](https://i.ibb.co/GV7VQQv/image.png)
+
+### `Listado dinámico (resultado)`
+
+![Listado dinámico (resultado)](https://i.ibb.co/KWSqyxr/image.png)
 
 Este listado hace uso de una interfaz llamada **Usuario** la cual es importada de un archivo llamado **reqRes** , acá dejo la estructura del mismo:
 
